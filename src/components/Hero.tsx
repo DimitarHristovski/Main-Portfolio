@@ -35,7 +35,8 @@ const Hero = () => {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="linkedin.com/in/dimitar-hristovski-1711a9163
+              "
               className="text-gray-600 hover:text-gray-900 transition-colors p-2 hover:bg-gray-100 rounded-full"
               aria-label="LinkedIn Profile"
               target="_blank"
@@ -44,7 +45,7 @@ const Hero = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:contact@example.com"
+              href="mailto:dimihbt@yahoo.com"
               className="text-gray-600 hover:text-gray-900 transition-colors p-2 hover:bg-gray-100 rounded-full"
               aria-label="Email Contact"
             >
