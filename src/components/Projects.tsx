@@ -1,6 +1,6 @@
 import React from "react";
 import { Github, ExternalLink } from "lucide-react";
-import { projects } from "../assets/Data/Data";
+import { projects } from "../../public/assets/Data/Data";
 
 export const Projects = () => {
   return (
