@@ -8,9 +8,11 @@ import {
   Star,
   Users,
 } from "lucide-react";
+
 const Hero = () => {
   return (
     <div>
+      {" "}
       <section className="min-h-screen flex flex-col justify-center items-center relative px-4 bg-gradient-to-b from-gray-50 to-white">
         <div className="text-center max-w-3xl">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
