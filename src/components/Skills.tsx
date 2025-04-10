@@ -1,23 +1,24 @@
 import React from "react";
-import { Code, Palette, Globe } from "lucide-react";
+import { Code, Palette, Bot } from "lucide-react";
 export const Skills = () => {
   const skills = [
     {
       icon: <Code size={24} />,
-      title: "Frontend Development",
+      title: "Fullstack Development",
       description:
-        "Expert in React, Next.js, TypeScript, and modern CSS frameworks",
+        "Experienced in creating end-to-end web applications with modern stacks React, Next.js, TypeScript, and modern CSS frameworks with Express.js and Node.js in other words MERN-STACK with knowlede of the RDBMS and NoSQL databases",
     },
     {
-      icon: <Globe size={24} />,
-      title: "Full Stack Development",
+      icon: <Bot size={24} />,
+      title: "AI Engineering",
       description:
-        "Building complete web applications with modern technologies",
+        "Skilled in designing and developing intelligent AI agents capable of autonomous decision-making, task automation, conversational interactions, and adaptive responses using state-of-the-art machine learning frameworks and APIs.",
     },
     {
       icon: <Palette size={24} />,
       title: "UI/UX Design",
-      description: "Creating responsive and user-friendly interfaces",
+      description:
+        "Skilled in designing intuitive, user-centric interfaces with Figma and prototyping tools, applying UX best practices, responsive design, and accessibility guidelines to create exceptional user experiences.",
     },
   ];
   return (
