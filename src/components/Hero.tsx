@@ -1,5 +1,13 @@
 import React from "react";
-
+import {
+  Github,
+  Linkedin,
+  Mail,
+  ChevronDown,
+  GitFork,
+  Star,
+  Users,
+} from "lucide-react";
 const Hero = () => {
   return (
     <div>
