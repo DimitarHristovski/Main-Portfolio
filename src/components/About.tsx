@@ -8,7 +8,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="src/assets/start.jpeg"
+                src="/assets/start.jpeg"
                 alt="Profile"
                 className="rounded-2xl shadow-2xl"
                 loading="lazy"
