@@ -8,8 +8,8 @@ export const Activity = () => {
           </h2>
           <div className="bg-white rounded-xl shadow-lg p-6">
             <img
-              src="https://github-readme-stats.vercel.app/api?username=DimitarHristovski&show_icons=true&theme=github_dark"
-              alt="GitHub Activity"
+              src="https://ghchart.rshah.org/DimitarHristovski"
+              alt="GitHub Contributions"
               className="w-full rounded-lg shadow"
             />
           </div>
