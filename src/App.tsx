@@ -13,16 +13,14 @@ function App() {
   return (
     <div>
       {" "}
-      <>
-        <LanguageSwitcher />
-        <Hero />
-        <Skills />
-        <About />
-        <Projects />
-        <Activity />
-        <Contact />
-        <Footer />{" "}
-      </>
+      <LanguageSwitcher />
+      <Hero />
+      <Skills />
+      <About />
+      <Projects />
+      <Activity />
+      <Contact />
+      <Footer />{" "}
     </div>
   );
 }
