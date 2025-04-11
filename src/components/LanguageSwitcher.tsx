@@ -23,7 +23,7 @@ const LanguageSwitcher = () => {
       <div
         className={`  ${
           theme === "dark"
-            ? "bg-gray-900 text-gray-100"
+            ? "bg-gray-900 text-gray-100 "
             : "bg-gray-50 text-gray-500"
         } ${"shadow-md rounded-full px-3 py-1 flex gap-2 items-center border border-gray-200"}`}
       >
@@ -39,8 +39,8 @@ const LanguageSwitcher = () => {
             className={`px-2 py-1 rounded-full text-xs font-semibold transition-colors duration-200
               ${
                 i18n.language === lang.code
-                  ? "bg-gray-900 text-gray-100"
-                  : "bg-gray-50 text-gray-900 "
+                  ? "bg-blue-500 text-gray-100 hover:bg-blue-500"
+                  : " text-gray-900 hover:bg-red-500"
               }`}
           >
             {lang.label}
