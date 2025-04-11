@@ -2,7 +2,7 @@ import React from "react";
 import { Github, ExternalLink } from "lucide-react";
 import { projects } from "../../public/assets/Data/Data";
 import { useTranslation } from "react-i18next";
-import { useTheme } from "../contexts/ThemeContext";
+import { useTheme } from "./contexts/ThemeContext";
 
 export const Projects = () => {
   const { t } = useTranslation();

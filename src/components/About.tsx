@@ -1,7 +1,7 @@
 import React from "react";
 import { Coffee } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { useTheme } from "../contexts/ThemeContext";
+import { useTheme } from "./contexts/ThemeContext";
 
 const About = () => {
   const { t } = useTranslation();

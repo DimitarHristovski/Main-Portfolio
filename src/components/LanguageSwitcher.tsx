@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Sun, Moon } from "lucide-react";
-import { useTheme } from "../contexts/ThemeContext";
+import { useTheme } from "./contexts/ThemeContext";
 
 const languages = [
   { code: "en", label: "EN" },
