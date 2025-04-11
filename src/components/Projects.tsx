@@ -27,7 +27,7 @@ export const Projects = () => {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className=" rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-2xl hover:-translate-y-1"
+                className="rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-2xl hover:-translate-y-1"
               >
                 <div className="relative">
                   <img
@@ -42,12 +42,14 @@ export const Projects = () => {
                   <h3 className="text-xl font-semibold mb-2">
                     {project.title}
                   </h3>
-                  <p className=" mb-4">{project.description}</p>
+
+                  <p className="mb-4">{t(project.descriptionKey)}</p>
+
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
-                        className="px-3 py-1  rounded-full text-sm"
+                        className="px-3 py-1 rounded-full text-sm"
                       >
                         {tag}
                       </span>

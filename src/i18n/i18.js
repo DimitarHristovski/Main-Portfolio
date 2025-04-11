@@ -4,6 +4,18 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
+      projectDescriptions: {
+        igraliste:
+          "A mobile-first E-store MVP built for a client selling clothes (currently in development).",
+        learnhub: "An open-source project I'm currently working on.",
+        furwood: "A simple E-store I created.",
+        clothes: "An SEO-friendly E-store built using Next.js.",
+        marinov:
+          "A mobile-first E-store MVP for a client selling jewelry (currently in development).",
+        portfolio: "A responsive portfolio built for an online competition.",
+        educenter: "A simple educational website I created.",
+        carrace: "A simple racing game I created (desktop only).",
+      },
       projects: "Featured Projects",
       HeroTitle: "Dimitar Hristovski",
       HeroParagraph: "Full Stack Developer",
@@ -31,6 +43,21 @@ const resources = {
   },
   de: {
     translation: {
+      projectDescriptions: {
+        igraliste:
+          "Ein Mobile-First E-Store MVP für einen Kunden, der Kleidung verkauft (derzeit in Entwicklung).",
+        learnhub: "Ein Open-Source-Projekt, an dem ich derzeit arbeite.",
+        furwood: "Ein einfacher E-Store, den ich erstellt habe.",
+        clothes: "Ein SEO-freundlicher E-Store, erstellt mit Next.js.",
+        marinov:
+          "Ein Mobile-First E-Store MVP für einen Kunden, der Schmuck verkauft (derzeit in Entwicklung).",
+        portfolio:
+          "Ein responsives Portfolio, das ich für einen Online-Wettbewerb erstellt habe.",
+        educenter: "Eine einfache Bildungswebsite, die ich erstellt habe.",
+        carrace:
+          "Ein einfaches Rennspiel, das ich erstellt habe (nur für Desktop).",
+      },
+
       projects: "Ausgewählte Projekte",
 
       HeroTitle: "Dimitar Hristovski",
@@ -59,6 +86,20 @@ const resources = {
   },
   mk: {
     translation: {
+      projectDescriptions: {
+        igraliste:
+          "Мобилна прво E-store апликација (MVP) за клиент кој продава облека (во развој).",
+        learnhub: "Опен-сорс проект на кој моментално работам.",
+        furwood: "Едноставен E-store што го имам изработено.",
+        clothes: "SEO-пријателски E-store изработен со Next.js.",
+        marinov:
+          "Мобилна прво E-store апликација (MVP) за клиент што продава накит (во развој).",
+        portfolio: "Респонзивно портфолио изработено за онлајн натпревар.",
+        educenter: "Едноставна едукативна веб-страница што ја имам направено.",
+        carrace:
+          "Едноставна тркачка игра што ја имам направено (само за десктоп).",
+      },
+
       projects: "Избрани проекти",
       HeroTitle: "Димитар Христовски",
       HeroParagraph: "Развивач на целосни решенија",

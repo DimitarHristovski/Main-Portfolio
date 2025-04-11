@@ -10,7 +10,7 @@ export const Footer = () => {
         theme === "dark"
           ? "bg-gray-900 text-gray-100"
           : "bg-gray-50 text-gray-900"
-      } border-t border-gray-100`}
+      }  `}
     >
       <div className="max-w-4xl mx-auto px-4 text-center ">
         <p>

@@ -20,8 +20,8 @@ const Hero = () => {
       <section
         className={`min-h-screen flex flex-col justify-center items-center relative px-4 bg-gradient-to-b ${
           theme === "dark"
-            ? "bg-gray-900 text-gray-100"
-            : "bg-gray-50 text-gray-900"
+            ? "bg-gray-800 text-gray-100"
+            : "bg-gray-100 text-gray-900"
         }`}
       >
         <div className="text-center max-w-3xl">
