@@ -24,7 +24,7 @@ const LanguageSwitcher = () => {
         className={`  ${
           theme === "dark"
             ? "bg-gray-900 text-gray-100"
-            : "bg-gray-50 text-gray-900"
+            : "bg-gray-50 text-gray-500"
         } ${"shadow-md rounded-full px-3 py-1 flex gap-2 items-center border border-gray-200"}`}
       >
         <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>

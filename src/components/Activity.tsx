@@ -10,7 +10,7 @@ export const Activity = () => {
         className={`py-20 ${
           theme === "dark"
             ? "bg-gray-800 text-gray-100"
-            : "bg-gray-100 text-gray-900"
+            : "bg-gray-100 text-gray-500"
         }`}
       >
         <div className="max-w-4xl mx-auto px-4 ">

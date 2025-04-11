@@ -15,12 +15,12 @@ export const Projects = () => {
         className={`py-20 ${
           theme === "dark"
             ? "bg-gray-900 text-gray-100"
-            : "bg-gray-50 text-gray-900"
+            : "bg-gray-50 text-gray-500"
         }`}
       >
         {" "}
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-3xl font-bold  mb-12 text-center">
             {t("projects")}
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
