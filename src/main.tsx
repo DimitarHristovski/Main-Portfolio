@@ -6,9 +6,10 @@ import React from "react";
 import { ThemeProvider } from "./contexts/ThemeContext.tsx";
 
 createRoot(document.getElementById("root")!).render(
-  <ThemeProvider>
-    <StrictMode>
+  <StrictMode>
+    {" "}
+    <ThemeProvider>
       <App />{" "}
-    </StrictMode>{" "}
-  </ThemeProvider>
+    </ThemeProvider>
+  </StrictMode>
 );
