@@ -1,26 +1,7 @@
 import React from "react";
 import { Code, Palette, Bot } from "lucide-react";
+import { skillsData } from "../Data/DB";
 export const Skills = () => {
-  const skills = [
-    {
-      icon: <Code size={24} />,
-      title: "Fullstack Development",
-      description:
-        "Experienced in creating end-to-end web applications with modern stacks React, Next.js, TypeScript, and modern CSS frameworks with Express.js and Node.js in other words MERN-STACK with knowlede of the RDBMS and NoSQL databases",
-    },
-    {
-      icon: <Bot size={24} />,
-      title: "AI Engineering",
-      description:
-        "Skilled in designing and developing intelligent AI agents capable of autonomous decision-making, task automation, conversational interactions, and adaptive responses using state-of-the-art machine learning frameworks and APIs.",
-    },
-    {
-      icon: <Palette size={24} />,
-      title: "UI/UX Design",
-      description:
-        "Skilled in designing intuitive, user-centric interfaces with Figma and prototyping tools, applying UX best practices, responsive design, and accessibility guidelines to create exceptional user experiences.",
-    },
-  ];
   return (
     <div>
       {" "}
@@ -30,7 +11,7 @@ export const Skills = () => {
             What I Do
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {skills.map((skill, index) => (
+            {skillsData.map((skill, index) => (
               <div
                 key={index}
                 className="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow"

@@ -8,23 +8,24 @@ import {
   Star,
   Users,
 } from "lucide-react";
-
+import { HeroText } from "../Data/DB";
+import { useTranslation } from "react-i18next";
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       {" "}
       <section className="min-h-screen flex flex-col justify-center items-center relative px-4 bg-gradient-to-b from-gray-50 to-white">
         <div className="text-center max-w-3xl">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
-            Dimitar Hristovski
+            {t("HeroTitle")}{" "}
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8">
-            Full Stack Developer
+            {t("HeroParagraph")}{" "}
           </p>
           <p className="text-lg text-gray-500 mb-8 max-w-2xl mx-auto">
-            Specializing in building modern web applications with Next.js,
-            React, and TypeScript. Focused on creating efficient, scalable, and
-            user-friendly solutions.
+            {t("HeroDescription")}{" "}
           </p>
           <div className="flex gap-4 justify-center mb-12">
             <a
