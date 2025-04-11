@@ -1,7 +1,12 @@
 import React from "react";
 import { Coffee } from "lucide-react";
 import { AboutInfo } from "./../Data/DB";
+import { useTranslation } from "react-i18next";
+
 const About = () => {
+  const { t } = useTranslation();
+  const aboutParagraphKeys = ["AboutParagraph1", "AboutParagraph2"];
+
   return (
     <div>
       <section className="py-20 bg-gray-50">
@@ -17,16 +22,16 @@ const About = () => {
             </div>
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                {AboutInfo.title}
+                {t("AboutTitle")}
               </h2>
-              {AboutInfo.paragraphs.map((paragraph, index) => (
+              {aboutParagraphKeys.map((key, index) => (
                 <p key={index} className="text-gray-600 mb-6">
-                  {paragraph}
+                  {t(key)}
                 </p>
               ))}
               <div className="flex items-center gap-2 text-gray-600">
                 <Coffee size={20} />
-                <span>{AboutInfo.tagline}</span>
+                <span>{t("AboutTagline")}</span>
               </div>
             </div>
           </div>

@@ -1,15 +1,18 @@
 import React from "react";
 import { Github, ExternalLink } from "lucide-react";
 import { projects } from "../../public/assets/Data/Data";
+import { useTranslation } from "react-i18next";
 
 export const Projects = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       {" "}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-            Featured Projects
+            {t("projects")}
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (

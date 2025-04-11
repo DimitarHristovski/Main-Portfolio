@@ -1,11 +1,10 @@
-// i18n.js
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-// Translation resources
 const resources = {
   en: {
     translation: {
+      projects: "Featured Projects",
       HeroTitle: "Dimitar Hristovski",
       HeroParagraph: "Full Stack Developer",
       HeroDescription:
@@ -20,7 +19,10 @@ const resources = {
       ContactDescription:
         "I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!",
       ContactButton: "Get in Touch",
-      SkillFullstack: "Fullstack Development",
+      SkillsSectionTitle: "What I Do",
+
+      SkillFullstackDescription:
+        "Experienced in creating end-to-end web applications with modern stacks like React, Next.js, TypeScript, and modern CSS frameworks alongside Express.js and Node.js, incorporating both RDBMS and NoSQL databases.",
       SkillAIDescription:
         "Skilled in designing and developing intelligent AI agents capable of autonomous decision-making, task automation, conversational interactions, and adaptive responses using state-of-the-art machine learning frameworks and APIs.",
       SkillUIDescription:
@@ -29,6 +31,8 @@ const resources = {
   },
   de: {
     translation: {
+      projects: "Ausgewählte Projekte",
+
       HeroTitle: "Dimitar Hristovski",
       HeroParagraph: "Full-Stack-Entwickler",
       HeroDescription:
@@ -43,7 +47,10 @@ const resources = {
       ContactDescription:
         "Ich bin immer daran interessiert, von neuen Projekten und Möglichkeiten zu hören. Wenn Sie eine Frage haben oder einfach nur Hallo sagen möchten, zögern Sie nicht, Kontakt aufzunehmen!",
       ContactButton: "Kontakt aufnehmen",
-      SkillFullstack: "Fullstack-Entwicklung",
+      SkillsSectionTitle: "Was ich mache",
+
+      SkillFullstackDescription:
+        "Erfahren in der Entwicklung von End-to-End-Webanwendungen mit modernen Stacks wie React, Next.js, TypeScript und modernen CSS-Frameworks sowie Express.js und Node.js, unter Einbeziehung von sowohl relationalen als auch NoSQL-Datenbanken.",
       SkillAIDescription:
         "Fähig in der Gestaltung und Entwicklung intelligenter KI-Agenten, die autonome Entscheidungsfindung, Aufgabenautomatisierung, konversationelle Interaktionen und adaptive Reaktionen mit modernsten Maschinenlern-Frameworks und APIs durchführen können.",
       SkillUIDescription:
@@ -52,6 +59,7 @@ const resources = {
   },
   mk: {
     translation: {
+      projects: "Избрани проекти",
       HeroTitle: "Димитар Христовски",
       HeroParagraph: "Развивач на целосни решенија",
       HeroDescription:
@@ -66,11 +74,14 @@ const resources = {
       ContactDescription:
         "Секогаш сум заинтересиран да слушнам за нови проекти и можности. Дали имате прашање или само сакате да кажете здраво, слободно контактирајте!",
       ContactButton: "Воспостави контакт",
-      SkillFullstack: "Развој на целосни решенија",
+      SkillsSectionTitle: "Што правам",
+
+      SkillFullstackDescription:
+        "Искуство во креирање целосни веб-апликации со современи технологии како React, Next.js, TypeScript и CSS рамки, заедно со Express.js и Node.js, користејќи и релациски и NoSQL бази на податоци.",
       SkillAIDescription:
         "Вешт во дизајнирање и развој на интелигентни АИ агенти способни за автономно донесување одлуки, автоматизација на задачи, конверзациски интеракции и адаптивни реакции со користење на најсовремени рамки за машинско учење и API-ја.",
       SkillUIDescription:
-        "Способен за дизајнирање на интуитивни, кориснички ориентирани интерфејси со користење на Figma и други алатки за прототипирање, применувајќи најдобри UX практики, одговорен дизајн и сме...",
+        "Искусen во дизајнирање интуитивни, кориснички ориентирани интерфејси со користење на Figma и други алатки за прототипирање, применувајќи најдобри UX практики, адаптивен дизајн и насоки за достапност за да се создадат извонредни кориснички искуства.",
     },
   },
 };
