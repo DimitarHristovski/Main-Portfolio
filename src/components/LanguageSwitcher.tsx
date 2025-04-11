@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { Sun, Moon } from "lucide-react";
+import { useTheme } from "../contexts/ThemeContext";
 
 const languages = [
   { code: "en", label: "EN" },
@@ -10,15 +12,24 @@ const languages = [
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
+  const { theme, setTheme } = useTheme();
 
   const handleChange = (lng) => {
     i18n.changeLanguage(lng);
-    console.log("Language changed to:", lng);
   };
 
   return (
-    <div className="fixed bottom-4 right-4 z-50">
-      <div className="bg-white shadow-md rounded-full px-3 py-1 flex gap-2 items-center border border-gray-200">
+    <div className="fixed top-4 right-4 z-50">
+      <div
+        className={`  ${
+          theme === "dark"
+            ? "bg-gray-900 text-gray-100"
+            : "bg-gray-50 text-gray-900"
+        } ${"shadow-md rounded-full px-3 py-1 flex gap-2 items-center border border-gray-200"}`}
+      >
+        <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+          {theme === "dark" ? <Sun /> : <Moon />}
+        </button>
         {languages.map((lang) => (
           <motion.button
             key={lang.code}
@@ -28,8 +39,8 @@ const LanguageSwitcher = () => {
             className={`px-2 py-1 rounded-full text-xs font-semibold transition-colors duration-200
               ${
                 i18n.language === lang.code
-                  ? "bg-blue-600 text-white"
-                  : "text-gray-700 hover:bg-gray-100"
+                  ? "bg-gray-900 text-gray-100"
+                  : "bg-gray-50 text-gray-900 "
               }`}
           >
             {lang.label}

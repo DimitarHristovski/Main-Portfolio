@@ -2,14 +2,23 @@ import React from "react";
 import { Github, ExternalLink } from "lucide-react";
 import { projects } from "../../public/assets/Data/Data";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "../contexts/ThemeContext";
 
 export const Projects = () => {
   const { t } = useTranslation();
+  const { theme } = useTheme();
 
   return (
     <div>
       {" "}
-      <section className="py-20 bg-white">
+      <section
+        className={`py-20 ${
+          theme === "dark"
+            ? "bg-gray-900 text-gray-100"
+            : "bg-gray-50 text-gray-900"
+        }`}
+      >
+        {" "}
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
             {t("projects")}
@@ -18,7 +27,7 @@ export const Projects = () => {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="bg-white rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-2xl hover:-translate-y-1"
+                className=" rounded-xl overflow-hidden shadow-lg transition-all hover:shadow-2xl hover:-translate-y-1"
               >
                 <div className="relative">
                   <img
@@ -33,12 +42,12 @@ export const Projects = () => {
                   <h3 className="text-xl font-semibold mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 mb-4">{project.description}</p>
+                  <p className=" mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
-                        className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm"
+                        className="px-3 py-1  rounded-full text-sm"
                       >
                         {tag}
                       </span>

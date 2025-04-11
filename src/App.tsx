@@ -7,23 +7,26 @@ import About from "./components/About";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-import { Switch } from "./components/Switch";
 import { Moon, Sun } from "lucide-react";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import "./i18n/i18";
+import { ThemeProvider } from "./contexts/ThemeContext";
 function App() {
   const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div>
-      <LanguageSwitcher />
-      <Hero />
-      <Skills />
-      <About />
-      <Projects />
-      <Activity />
-      <Contact />
-      <Footer />
+      {" "}
+      <ThemeProvider>
+        <LanguageSwitcher />
+        <Hero />
+        <Skills />
+        <About />
+        <Projects />
+        <Activity />
+        <Contact />
+        <Footer />{" "}
+      </ThemeProvider>
     </div>
   );
 }
