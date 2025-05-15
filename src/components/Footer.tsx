@@ -1,6 +1,7 @@
 import React from "react";
 import { useTheme } from "./contexts/ThemeContext";
 import ScrollToTopButton from "./ScrollToTopButton";
+import ChatWidget from "./ChatMessage";
 
 export const Footer = () => {
   const { theme } = useTheme();
@@ -13,9 +14,8 @@ export const Footer = () => {
           : "bg-gray-50 text-gray-500"
       }  `}
     >
-      <div>
-        <ScrollToTopButton />
-      </div>
+      <ChatWidget />
+      <ScrollToTopButton />
       <div className="max-w-4xl mx-auto px-4 text-center ">
         <p>
           © {new Date().getFullYear()} Dimitar Hristovski. All rights reserved.
