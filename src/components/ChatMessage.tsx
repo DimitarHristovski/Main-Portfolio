@@ -148,9 +148,9 @@ const ChatWidget = () => {
     <>
       <button
         onClick={toggleChat}
-        className={`fixed z-50 bottom-6 right-6 p-4 rounded-full shadow-lg transition-all duration-300 ${
-          isOpen ? "bg-red-500 rotate-90 " : "bg-blue-500 hover:bg-blue-600"
-        } ${isVisible ? "opacity-100 " : "opacity-0"}`}
+        className={`fixed z-50 bottom-6 right-6 p-4 rounded-full shadow-lg transition-all duration-300 transform ease-in-out
+    ${isOpen ? "bg-red-500 rotate-90" : "bg-blue-500 hover:bg-blue-600"}
+    ${isVisible ? "opacity-100 block" : "opacity-0 hidden"}`}
       >
         {isOpen ? (
           <X className="text-white" size={24} />
