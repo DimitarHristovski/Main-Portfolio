@@ -78,9 +78,9 @@ const ChatWidget = () => {
 
       const responseMap: { [key: string]: string[] } = {
         yourself: [
-          "I'm a Full Stack Developer who loves building fast, scalable, and user-centric applications using React, Next.js, and TypeScript.",
-          "I create modern web applications with a strong focus on clean code, performance, and real-world value.",
-          "I specialize in full stack development and AI-driven features, always looking to solve meaningful problems.",
+          "I'm a Full Stack Developer based in Germany who loves building fast, scalable, and user-centric applications using React, Next.js, and TypeScript.",
+          "I'm a Full Stack Developer based in Germany and i create modern web applications with a strong focus on clean code, performance, and real-world value.",
+          "I'm a Full Stack Developer based in Germany and i specialize in full stack development and AI-driven features, always looking to solve meaningful problems.",
         ],
         skills: [
           "I'm skilled in React, Next.js, TypeScript, Node.js, Express, MongoDB, PostgreSQL, Supabase, and more.",
