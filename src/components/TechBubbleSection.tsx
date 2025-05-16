@@ -17,7 +17,6 @@ import { BiLogoVisualStudio } from "react-icons/bi";
 
 import { useTheme } from "./contexts/ThemeContext";
 
-// List of technologies
 const techIcons = [
   { icon: <SiReact size={40} />, name: "React" },
   { icon: <SiNextdotjs size={40} />, name: "Next.js" },
@@ -35,30 +34,35 @@ const techIcons = [
 
 export default function TechBubbleSection() {
   const { theme } = useTheme();
+  const [clickedIndex, setClickedIndex] = useState<number | null>(null);
 
   return (
     <div
-      className={`w-full py-12 bg-gradient-to-r  flex justify-center overflow-hidden ${
-        theme === "dark"
-          ? "bg-gray-900 text-gray-100"
-          : "bg-gray-50 text-gray-500"
+      className={`w-full py-12 px-4 sm:px-8 md:px-16 flex justify-center ${
+        theme === "dark" ? "bg-gray-900 text-white" : "bg-gray-50 text-gray-800"
       }`}
     >
-      <div className="flex gap-10">
+      <div className="flex flex-wrap gap-6 justify-center max-w-7xl">
         {techIcons.map((tech, index) => (
           <motion.div
             key={tech.name}
             animate={{
-              y: [0, -40, 0], // subtle up and down float
+              y: clickedIndex === index ? 500 : [40, -40, 40],
+              scale: clickedIndex === index ? [1, 1.5, 0.5, 1] : 1,
             }}
             transition={{
-              duration: 2 + index * 0.1,
-              repeat: Infinity,
+              duration: clickedIndex === index ? 0.6 : 2 + index * 0.1,
+              repeat: clickedIndex === index ? 0 : Infinity,
               ease: "easeInOut",
             }}
-            className="p-4 rounded-full bg-white/10 backdrop-blur shadow-lg hover:scale-110 transition-transform"
+            className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full bg-white/10 backdrop-blur shadow-md hover:scale-110 transition-transform cursor-pointer"
+            title={tech.name}
+            onClick={() => {
+              setClickedIndex(index);
+              setTimeout(() => setClickedIndex(null), 1000);
+            }}
           >
-            {tech.icon}
+            <div className="text-2xl sm:text-3xl">{tech.icon}</div>
           </motion.div>
         ))}
       </div>
