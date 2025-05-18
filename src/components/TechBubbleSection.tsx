@@ -32,7 +32,7 @@ const techIcons = [
   { 
     icon: (
       <a 
-        href="https://stratego-ivory.vercel.app/" 
+        href="https://stratego-ecru.vercel.app/" 
         target="_blank" 
         rel="noopener noreferrer"
         onClick={(e) => e.stopPropagation()}
