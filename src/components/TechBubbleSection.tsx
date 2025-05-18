@@ -10,10 +10,10 @@ import {
   SiMongodb,
   SiFigma,
   SiN8N,
-  SiVercel,
   SiShadcnui,
 } from "react-icons/si";
 import { BiLogoVisualStudio } from "react-icons/bi";
+import { IoGameController } from "react-icons/io5";
 
 import { useTheme } from "./contexts/ThemeContext";
 
@@ -27,9 +27,21 @@ const techIcons = [
   { icon: <SiMongodb size={40} />, name: "MongoDB" },
   { icon: <SiFigma size={40} />, name: "Figma" },
   { icon: <SiN8N size={40} />, name: "N8N" },
-  { icon: <SiVercel size={40} />, name: "Vercel" },
   { icon: <SiShadcnui size={40} />, name: "Shadcnui" },
   { icon: <BiLogoVisualStudio size={40} />, name: "VisualStudio" },
+  { 
+    icon: (
+      <a 
+        href="https://stratego-ivory.vercel.app/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <IoGameController size={40} />
+      </a>
+    ), 
+    name: "Game Development" 
+  },
 ];
 
 export default function TechBubbleSection() {
